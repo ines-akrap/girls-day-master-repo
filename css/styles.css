@@ -1,0 +1,104 @@
+body {
+  max-width: 750px;
+  margin: auto;
+}
+
+.content {
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: gray;
+  text-align: center;
+}
+
+.header img {
+  height: 50px;
+  width: auto;
+  padding: 10px;
+}
+
+.profile {
+  height: 300px;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-image {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-wrapper {
+  height: 200px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
+.tab-link {
+  background-color: inherit;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+.tabcontent.active.grid {
+  display: grid;
+}
+
+.grid {
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  justify-items: center;
+}
+
+.grid .post {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid .post-content {
+  display: none;
+}
+
+.post-image {
+  max-width: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+  color: white;
+}

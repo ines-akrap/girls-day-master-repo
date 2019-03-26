@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Inestagram</title>
+    <meta name="description" content="Netcentric Girls day App">
+    <meta name="author" content="Ines">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/users.css?v=1.0">
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="assets/icons/instagram-1-svg-vector-logo.svg">
+    </header>
+
+    <div class="content">
+      <div class="profile">MY PROFILE</div>
+      
+      <div class="tab" data-active-tab="grid">
+        <button class="tab-link active" data-link-tab="grid">GRID</button>
+        <button class="tab-link" data-link-tab="list">LIST</button>
+        <button class="tab-link" data-link-tab="users">USERS</button>
+      </div>        
+      
+      <div class="tabcontent posts grid active" data-selector-tab-posts></div>
+      <div class="tabcontent users" data-selector-tab-users></div>
+    </div>
+    
+    <footer class="footer"></footer>
+    <script type="module" src="./js/scripts.js"></script>
+  </body>
+</html>
