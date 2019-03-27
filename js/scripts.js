@@ -7,6 +7,7 @@ const tabBar = document.querySelector('[data-active-tab]');
 const tabLinks = document.querySelectorAll('[data-link-tab]');
 
 const renderImages = (images) => {
+  tabPosts.innerHTML='';
   images.forEach((image) => {
     const post = document.createElement('div');
     post.classList.add('post');
@@ -15,9 +16,9 @@ const renderImages = (images) => {
       <img class="post-image" src=${image.imageUrl} alt="Profile picture"></img>
       <div class="post-content">
           <div class="post-likes">
-            <button class="post-likes-icon">$</button>
+            <i class="glyphicon glyphicon-heart post-likes-icon"></i>
             <span class="post-likes-number">5</span>
-            <span class="post-likes-list">${image.liked}</span>
+            <span class="post-likes-list">Liked by <b>${image.liked}</b></span>
           </div>
           <div class="post-time">${image.timestamp}</div>
       </div>
@@ -87,8 +88,22 @@ const switchTab = (e) => {
   tabPosts.classList.toggle('list');
 }
 
+const switchUser = (e) => {
+  const userClicked = e.target.getAttribute('data-user');
+  profiles.profiles.forEach((profile) => {
+    if (profile.userName === userClicked) {
+      renderProfile(profile);
+    }
+  });
+}
+
 const initTabs = () => {
   tabLinks.forEach((link) => link.addEventListener('click', switchTab));
+}
+
+const userSwitch = () => {
+  const userProfile = document.getElementsByClassName('user');
+  [].forEach.call(userProfile, (el) => el.addEventListener('click', switchUser));
 }
 
 const init = () => {
@@ -96,6 +111,7 @@ const init = () => {
   renderProfile(initProfile);
   renderUsers(profiles.profiles);
   initTabs();
+  userSwitch();
 }
 
 init();

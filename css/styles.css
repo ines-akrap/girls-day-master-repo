@@ -1,4 +1,5 @@
 body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   max-width: 750px;
   margin: auto;
 }
@@ -94,6 +95,15 @@ body {
 
 .post-image {
   max-width: 100%;
+}
+
+.post-likes-icon {
+  color: red;
+  font-family: 'Glyphicons Halflings';
+}
+
+.post-time {
+  color: #999;
 }
 
 .footer {
