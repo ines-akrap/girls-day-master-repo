@@ -12,12 +12,12 @@ body {
 .header {
   width: 100%;
   height: 70px;
-  background-color: gray;
+  background-color: grey;
   text-align: center;
 }
 
 .header img {
-  height: 50px;
+  height: 70px;
   width: auto;
   padding: 10px;
 }
@@ -119,6 +119,9 @@ body {
   color: black;
   cursor: pointer;
   font-family: 'Glyphicons Halflings';
+}
+.post-likes-list{
+  color: #411C41;
 }
 
 .post-time {
