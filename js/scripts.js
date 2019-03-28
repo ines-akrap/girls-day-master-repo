@@ -7,6 +7,7 @@ const tabBar = document.querySelector('[data-active-tab]');
 const tabLinks = document.querySelectorAll('[data-link-tab]');
 
 const renderImages = (images) => {
+  tabPosts.innerHTML='';
   images.forEach((image) => {
     const post = document.createElement('div');
     post.classList.add('post');
@@ -15,9 +16,9 @@ const renderImages = (images) => {
       <img class="post-image" src=${image.imageUrl} alt="Profile picture"></img>
       <div class="post-content">
           <div class="post-likes">
-            <button class="post-likes-icon">$</button>
-            <span class="post-likes-number">5</span>
-            <span class="post-likes-list">${image.liked}</span>
+            <i class="glyphicon glyphicon-heart post-likes-icon"></i>
+            <span class="post-likes-number">${Math.floor(Math.random() * 100)}</span>
+            <span class="post-likes-list">Liked by <b>${image.liked}</b></span>
           </div>
           <div class="post-time">${image.timestamp}</div>
       </div>
@@ -35,7 +36,7 @@ const renderProfileBox = (profile) => {
         <h2 class="profile-name">${profile.name}</h2>
         <p class="profile-user">${profile.userName}</p>
         <p class="profile-bio">${profile.description}</p>
-        <a class="profile-link">${profile.profileUrl}</a>
+        <a class="profile-link" href="${profile.profileUrl}" target="_blank">${profile.profileUrl}</a>
     </div>
   `;
   
@@ -74,6 +75,9 @@ const renderUsers = (profiles) => {
 const switchTab = (e) => {
   const clickedLink = e.target.getAttribute('data-link-tab');
   const activeTab = tabBar.getAttribute('data-active-tab');
+
+  tabLinks.forEach((link) => link.classList.remove('active'));
+  e.target.classList.add('active');
   if (clickedLink === activeTab) {return;}
 
   tabBar.setAttribute('data-active-tab', clickedLink);
@@ -87,8 +91,36 @@ const switchTab = (e) => {
   tabPosts.classList.toggle('list');
 }
 
+const switchUser = (e) => {
+  const userClicked = e.target.getAttribute('data-user');
+  profiles.profiles.forEach((profile) => {
+    if (profile.userName === userClicked) {
+      renderProfile(profile);
+    }
+  });
+  userSwitch();
+  changeLike();
+}
+
 const initTabs = () => {
   tabLinks.forEach((link) => link.addEventListener('click', switchTab));
+}
+
+const userSwitch = () => {
+  const userProfile = document.getElementsByClassName('user');
+  [].forEach.call(userProfile, (el) => el.addEventListener('click', switchUser));
+}
+
+const changeLike = () => {
+  const likeImage = document.getElementsByClassName('post-likes-icon');
+  [].forEach.call(likeImage, (el) => el.addEventListener('click', changeColor));
+}
+
+const changeColor = (e) => {
+  const red = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  e.target.style.color = "rgb(" + red + "," + green + "," + blue + ")";
 }
 
 const init = () => {
@@ -96,6 +128,8 @@ const init = () => {
   renderProfile(initProfile);
   renderUsers(profiles.profiles);
   initTabs();
+  userSwitch();
+  changeLike();
 }
 
 init();
