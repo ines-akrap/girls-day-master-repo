@@ -42,6 +42,7 @@ body {
 
 .profile-wrapper {
   height: 200px;
+  max-width: 50%;
 }
 
 .tab {
@@ -60,6 +61,15 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  width: 33%;
+  height: 100%;
+}
+
+.tab-link.active,
+.tab-link:focus {
+  outline: none;
+  border: none;
+  color: #5a3698;
 }
 
 .tabcontent {
@@ -93,12 +103,21 @@ body {
   display: none;
 }
 
+.list .post {
+  margin-bottom: 10px;
+}
+
 .post-image {
   max-width: 100%;
 }
 
+.post-content {
+  padding: 10px;
+}
+
 .post-likes-icon {
-  color: red;
+  color: black;
+  cursor: pointer;
   font-family: 'Glyphicons Halflings';
 }
 
