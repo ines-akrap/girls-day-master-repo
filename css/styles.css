@@ -12,12 +12,12 @@ body {
 .header {
   width: 100%;
   height: 70px;
-  background-color: gray;
+  background-color: #ffd8ec;
   text-align: center;
 }
 
 .header img {
-  height: 50px;
+  height: 70px;
   width: auto;
   padding: 10px;
 }
@@ -121,13 +121,17 @@ body {
   font-family: 'Glyphicons Halflings';
 }
 
-.post-time {
+.post-likes-list {
+  color: #5a3698;
+}
+
+ .post-time {
   color: #999;
 }
 
 .footer {
   width: 100%;
   height: 50px;
-  background-color: gray;
+  background-color:#ffd8ec;
   color: white;
 }
