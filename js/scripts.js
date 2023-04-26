@@ -73,12 +73,14 @@ const renderUsers = (profiles) => {
 }
 
 const switchTab = (e) => {
-  const clickedLink = e.target.getAttribute('data-link-tab');
+  let element = e.target;
+  if (element.localName === 'i') { element = element.parentNode; }
+  const clickedLink = element.getAttribute('data-link-tab');
   const activeTab = tabBar.getAttribute('data-active-tab');
+  if (clickedLink === activeTab) {return;}
 
   tabLinks.forEach((link) => link.classList.remove('active'));
-  e.target.classList.add('active');
-  if (clickedLink === activeTab) {return;}
+  element.classList.add('active');
 
   tabBar.setAttribute('data-active-tab', clickedLink);
   if (clickedLink === 'users' || activeTab === 'users') {
