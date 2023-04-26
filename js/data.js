@@ -11,35 +11,35 @@ export const profiles = {
       "following": "320",
       "images": [
         {
-          "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
+          "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
           "liked": ["ines.nc", " samircro", " lavilla"],
           "description": "Lorem Ipsum, bla bla bla",
           "timestamp": "24-04-2023",
           "comments": []
         },
         {
-          "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
+          "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
           "liked": [],
           "description": "Lorem Ipsum, bla bla bla",
           "timestamp": "10-04-2023",
           "comments": []
         },
         {
-          "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
+          "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
           "liked": ["photoclaire"],
           "description": "Lorem Ipsum, bla bla bla",
           "timestamp": "03-04-2023",
           "comments": []
         },
         {
-          "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
+          "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
           "liked": [],
           "description": "Lorem Ipsum, bla bla bla",
           "timestamp": "01-03-2023",
           "comments": []
         },
         {
-          "imageUrl": "https://images.unsplash.com/photo-1516635707594-6949bdca3538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
+          "imageUrl": "https://images.unsplash.com/photo-1516635707594-6949bdca3538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
           "liked": [],
           "description": "Lorem Ipsum, bla bla bla",
           "timestamp": "01-03-2023",
@@ -53,21 +53,21 @@ export const profiles = {
           "comments": []
         },
         {
-          "imageUrl": "https://images.unsplash.com/photo-1570215170761-f056128eda48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
+          "imageUrl": "https://images.unsplash.com/photo-1570215170761-f056128eda48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
           "liked": [],
           "description": "Lorem Ipsum, bla bla bla",
           "timestamp": "19-01-2023",
           "comments": []
         },
         {
-          "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
+          "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
           "liked": [],
           "description": "Lorem Ipsum, bla bla bla",
           "timestamp": "25-11-2022",
           "comments": []
         },
         {
-          "imageUrl": "https://images.unsplash.com/photo-1550305080-4e029753abcf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
+          "imageUrl": "https://images.unsplash.com/photo-1550305080-4e029753abcf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
           "liked": [],
           "description": "Lorem Ipsum, bla bla bla",
           "timestamp": "01-01-2018",
